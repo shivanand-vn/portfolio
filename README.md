@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository! I'm an MCA student and passionate developer focused on building reliable, practical applications with Python, React, and modern web technologies. This repository contains the source code for my interactive portfolio, designed to showcase my projects, skills, education, and professional experience.
 
-🌐 **Live Demo:** [https://shivanandvn.vercel.app/](https://shivanandvn.vercel.app/)
+🌐 **Live Now:** [https://shivanandvn.vercel.app/](https://shivanandvn.vercel.app/)
 
 ## ✨ Key Features
 
