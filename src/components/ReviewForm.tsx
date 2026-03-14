@@ -15,12 +15,13 @@ export default function ReviewForm() {
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Placeholder credentials — user should replace these
-    const SERVICE_ID = 'YOUR_SERVICE_ID'
-    const TEMPLATE_ID = 'YOUR_TEMPLATE_ID'
-    const PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+    // Environment variables from .env file
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
-    if (SERVICE_ID === 'YOUR_SERVICE_ID') {
+    // Fallback/Demo check
+    if (!SERVICE_ID || SERVICE_ID.includes('placeholder')) {
       console.warn('EmailJS credentials are not set.')
       // Simulate success for demo purposes if not set
       setIsSubmitting(true)
