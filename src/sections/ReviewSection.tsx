@@ -1,6 +1,5 @@
 import SectionHeading from '../components/SectionHeading'
 import ReviewForm from '../components/ReviewForm'
-import TestimonialCard from '../components/TestimonialCard'
 
 export default function ReviewSection() {
   return (
