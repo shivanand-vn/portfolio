@@ -174,6 +174,7 @@ export const portfolio = {
         'Intelligent waste management system utilizing IoT sensors and AI to monitor bin levels in real-time, sending push notifications and automated email alerts, and predicting when bins will fill next.',
       links: {
         github: 'https://github.com/shivanand-vn/AI-IoT-based-Smart-Waste-Management-System',
+        linkedin: 'https://www.linkedin.com/posts/shivanandvn_iot-ai-smartcity-activity-7459653646084132864-Sqk4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAXrx8BhCYiQe8fd_WOVuzf2DJd7XhQHbQ',
       },
       highlights: [
         'Real-time waste level detection using ultrasonic sensors',

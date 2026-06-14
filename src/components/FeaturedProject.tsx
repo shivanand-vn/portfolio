@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiCheckCircle, FiExternalLink, FiGithub } from 'react-icons/fi'
+import { FiCheckCircle, FiExternalLink, FiGithub, FiLinkedin } from 'react-icons/fi'
 import Chip from './Chip'
 import Button from './Button'
 import ProjectPreviewStrip from './ProjectPreviewStrip'
@@ -9,7 +9,7 @@ export type Project = {
   tech: readonly string[]
   description: string
   highlights: readonly string[]
-  links?: { github?: string; live?: string }
+  links?: { github?: string; live?: string; linkedin?: string }
   images?: readonly { src: string; alt: string }[]
   appreciationBadge?: string
   tag?: string
@@ -110,6 +110,17 @@ export default function FeaturedProject({
             >
               <FiGithub className="h-3.5 w-3.5" />
               GitHub Repository
+            </Button>
+          ) : null}
+          {project.links?.linkedin ? (
+            <Button
+              href={project.links.linkedin}
+              variant="secondary"
+              ariaLabel="View Project Post on LinkedIn"
+              className="text-xs px-4 py-1.5"
+            >
+              <FiLinkedin className="h-3.5 w-3.5" />
+              LinkedIn Post
             </Button>
           ) : null}
           {project.links?.live ? (
