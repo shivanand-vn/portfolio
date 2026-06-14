@@ -241,6 +241,13 @@ export const portfolio = {
   ],
   certifications: [
     {
+      title: 'Microsoft Azure Course Completion',
+      issuer: 'Microsoft Learn & FICE',
+      year: '2026',
+      image: '/certificates/azure-certificate.png',
+      description: 'Completed a 25-hour course on Microsoft Azure cloud concepts, services, and architecture, issued by Microsoft Learn in collaboration with FICE.',
+    },
+    {
       title: 'React.js – Frontend Development',
       issuer: 'Simplilearn',
       year: '2024',
