@@ -120,7 +120,7 @@ export default function FeaturedProject({
               className="text-xs px-4 py-1.5"
             >
               <FiLinkedin className="h-3.5 w-3.5" />
-              LinkedIn Post
+              Project Demo
             </Button>
           ) : null}
           {project.links?.live ? (
