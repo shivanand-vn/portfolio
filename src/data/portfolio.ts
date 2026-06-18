@@ -227,7 +227,7 @@ export const portfolio = {
       issuer: 'Shree Veerabhadreshwar Pharma',
       year: '2026',
       image: '/certificates/sv-pharma-appreciation.webp',
-      description: 'Received an official appreciation letter from SGT – Shree Veerabhadreshwar Pharma for successfully designing, developing, and deploying an online pharmacy platform. The system helps the business manage customer accounts, showcase medicines online, process orders smoothly, track payments, and monitor pending balances while improving operational workflow.',
+      description: 'Received an official appreciation letter from SV Pharma – Shree Veerabhadreshwar Pharma for successfully designing, developing, and deploying an online pharmacy platform. The system helps the business manage customer accounts, showcase medicines online, process orders smoothly, track payments, and monitor pending balances while improving operational workflow.',
       badge: 'Client Appreciation',
     },
     {
