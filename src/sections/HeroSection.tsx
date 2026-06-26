@@ -115,22 +115,13 @@ export default function HeroSection() {
                 className="relative flex items-center justify-center h-72 w-72 sm:h-96 sm:w-96 select-none"
               >
                 {/* Outer pulsing glow ring */}
-                <div className="absolute inset-[-10px] rounded-full bg-gradient-to-tr from-emerald-500/20 via-purple-500/10 to-transparent blur-2xl animate-pulse-slow" />
+                <div className="absolute inset-[-20px] rounded-full bg-gradient-to-tr from-purple-500/10 via-sky-500/10 to-transparent blur-2xl animate-pulse-slow" />
                 
-                {/* Spinning outline tracks */}
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-                  className="absolute inset-[-6px] rounded-full border border-dashed border-zinc-300 dark:border-zinc-800"
-                />
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 35, repeat: Infinity, ease: 'linear' }}
-                  className="absolute inset-[-14px] rounded-full border border-dashed border-emerald-500/20 dark:border-emerald-400/10"
-                />
+                {/* Solid outer ring */}
+                <div className="absolute inset-[-16px] rounded-full border-2 border-white/60 dark:border-zinc-700/50 shadow-[0_0_20px_rgba(255,255,255,0.15)]" />
 
-                {/* Main Circular Portrait Container (Water-Drop Glass Style) */}
-                <div className="relative h-full w-full overflow-hidden rounded-full border-[6px] border-white/65 dark:border-zinc-800/45 bg-white/20 dark:bg-zinc-950/30 backdrop-blur-md shadow-[inset_0_2px_4px_rgba(255,255,255,0.45),0_15px_30px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05),0_20px_45px_rgba(0,0,0,0.55)]">
+                {/* Main Circular Portrait Container */}
+                <div className="relative h-full w-full overflow-hidden rounded-full border-[6px] border-white dark:border-zinc-800 bg-white/20 dark:bg-zinc-950/30 backdrop-blur-md shadow-[inset_0_2px_4px_rgba(255,255,255,0.45),0_15px_30px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05),0_20px_45px_rgba(0,0,0,0.55)]">
                   <img
                     src="/profile-shivanand.webp"
                     alt={portfolio.name}
