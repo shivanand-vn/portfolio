@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 export default function Background() {
@@ -18,82 +17,30 @@ export default function Background() {
         {mounted && (
           <div className="absolute inset-0 block dark:hidden opacity-98">
             {/* Top Left Bubble (Yellow/Orange) */}
-            <motion.div
-              animate={{ 
-                x: [0, 50, -25, 0],
-                y: [0, -30, 30, 0],
-                scale: [1, 1.1, 0.9, 1]
-              }}
-              transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -left-[10%] -top-[10%] h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-yellow-250/50 via-orange-200/45 to-pink-200/50 blur-[70px]"
-            />
+            <div className="absolute -left-[10%] -top-[10%] h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-yellow-250/50 via-orange-200/45 to-pink-200/50 blur-[50px] animate-blob-drift-1" />
 
             {/* Top Right Bubble (Pink/Blue/Purple) */}
-            <motion.div
-              animate={{ 
-                x: [0, -40, 40, 0],
-                y: [0, 40, -40, 0],
-                scale: [1, 0.9, 1.1, 1]
-              }}
-              transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -right-[5%] top-[10%] h-[700px] w-[700px] rounded-full bg-gradient-to-tr from-pink-300/60 via-purple-300/50 to-sky-300/60 blur-[75px]"
-            />
+            <div className="absolute -right-[5%] top-[10%] h-[700px] w-[700px] rounded-full bg-gradient-to-tr from-pink-300/60 via-purple-300/50 to-sky-300/60 blur-[55px] animate-blob-drift-2" />
 
             {/* Center Left Bubble (Mint/Teal) */}
-            <motion.div
-              animate={{ 
-                x: [0, 30, -40, 0],
-                y: [0, 50, -25, 0]
-              }}
-              transition={{ duration: 28, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute left-[5%] top-[40%] h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-emerald-200/50 via-teal-200/40 to-sky-200/50 blur-[70px]"
-            />
+            <div className="absolute left-[5%] top-[40%] h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-emerald-200/50 via-teal-200/40 to-sky-200/50 blur-[50px] animate-blob-drift-3" />
 
             {/* Bottom Right Bubble (Lavender/Purple) */}
-            <motion.div
-              animate={{ 
-                x: [0, -50, 30, 0],
-                y: [0, -40, 50, 0]
-              }}
-              transition={{ duration: 26, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -bottom-[10%] -right-[5%] h-[650px] w-[650px] rounded-full bg-gradient-to-tr from-purple-200/60 via-fuchsia-250/50 to-pink-250/60 blur-[80px]"
-            />
+            <div className="absolute -bottom-[10%] -right-[5%] h-[650px] w-[650px] rounded-full bg-gradient-to-tr from-purple-200/60 via-fuchsia-250/50 to-pink-250/60 blur-[60px] animate-blob-drift-4" />
           </div>
         )}
 
         {/* Dark Mode Cyber Nebula Background */}
         {mounted && (
           <div className="absolute inset-0 hidden dark:block">
-            <motion.div
-              animate={{ 
-                opacity: [0.2, 0.3, 0.2], 
-                scale: [1, 1.05, 1],
-                x: [0, 40, 0],
-                y: [0, 20, 0]
-              }}
-              transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -left-[10%] -top-[10%] h-[550px] w-[550px] rounded-full bg-emerald-500/20 blur-[100px]"
-            />
-            <motion.div
-              animate={{ 
-                opacity: [0.15, 0.25, 0.15], 
-                scale: [1, 1.1, 1],
-                x: [0, -30, 0],
-                y: [0, -40, 0]
-              }}
-              transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -bottom-[10%] -right-[10%] h-[650px] w-[650px] rounded-full bg-purple-600/18 blur-[110px]"
-            />
-            <motion.div
-              animate={{ 
-                opacity: [0.1, 0.2, 0.1], 
-                scale: [1, 1.1, 1],
-                x: [0, 20, -20, 0],
-                y: [0, -20, 20, 0]
-              }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute left-[25%] top-[35%] h-[500px] w-[500px] rounded-full bg-indigo-500/15 blur-[100px]"
-            />
+            {/* Top Left Nebula */}
+            <div className="absolute -left-[10%] -top-[10%] h-[550px] w-[550px] rounded-full bg-emerald-500/20 blur-[75px] animate-nebula-drift-1" />
+            
+            {/* Bottom Right Nebula */}
+            <div className="absolute -bottom-[10%] -right-[10%] h-[650px] w-[650px] rounded-full bg-purple-600/18 blur-[80px] animate-nebula-drift-2" />
+            
+            {/* Center Left Nebula */}
+            <div className="absolute left-[25%] top-[35%] h-[500px] w-[500px] rounded-full bg-indigo-500/15 blur-[75px] animate-nebula-drift-3" />
           </div>
         )}
 
@@ -150,8 +97,8 @@ export default function Background() {
         )}
       </div>
 
-      {/* 3. Central Glass Blur Barrier */}
-      <div className="pointer-events-none fixed inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-[95vw] lg:max-w-6xl -z-[8] bg-slate-50/5 dark:bg-zinc-950/5 backdrop-blur-[3px] [mask-image:linear-gradient(to_right,transparent,white_15%,white_85%,transparent)]" />
+      {/* 3. Central Glass Blur Barrier (Optimized: backdrop-blur removed to prevent dynamic render-repaint storm during scrolling) */}
+      <div className="pointer-events-none fixed inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-[95vw] lg:max-w-6xl -z-[8] bg-slate-50/[0.02] dark:bg-zinc-950/[0.02] border-x border-zinc-200/5 dark:border-zinc-800/5" />
     </>
   )
 }

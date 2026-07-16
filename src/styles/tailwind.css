@@ -186,6 +186,43 @@
     }
   }
 
+  @keyframes blob-drift-1 {
+    0%, 100% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(50px, -30px) scale(1.08); }
+    66% { transform: translate(-25px, 30px) scale(0.92); }
+  }
+
+  @keyframes blob-drift-2 {
+    0%, 100% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(-45px, 45px) scale(0.92); }
+    66% { transform: translate(45px, -45px) scale(1.08); }
+  }
+
+  @keyframes blob-drift-3 {
+    0%, 100% { transform: translate(0px, 0px); }
+    50% { transform: translate(30px, 50px); }
+  }
+
+  @keyframes blob-drift-4 {
+    0%, 100% { transform: translate(0px, 0px); }
+    50% { transform: translate(-50px, -40px); }
+  }
+
+  @keyframes nebula-drift-1 {
+    0%, 100% { transform: translate(0px, 0px) scale(1); opacity: 0.18; }
+    50% { transform: translate(35px, 20px) scale(1.05); opacity: 0.28; }
+  }
+
+  @keyframes nebula-drift-2 {
+    0%, 100% { transform: translate(0px, 0px) scale(1); opacity: 0.12; }
+    50% { transform: translate(-30px, -35px) scale(1.08); opacity: 0.22; }
+  }
+
+  @keyframes nebula-drift-3 {
+    0%, 100% { transform: translate(0px, 0px) scale(1); opacity: 0.08; }
+    50% { transform: translate(20px, -20px) scale(1.08); opacity: 0.18; }
+  }
+
   .animate-float-slow {
     animation: float-slow 15s ease-in-out infinite;
   }
@@ -196,6 +233,41 @@
 
   .animate-float-fast {
     animation: float-fast 10s ease-in-out infinite;
+  }
+
+  .animate-blob-drift-1 {
+    animation: blob-drift-1 25s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-blob-drift-2 {
+    animation: blob-drift-2 22s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-blob-drift-3 {
+    animation: blob-drift-3 28s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-blob-drift-4 {
+    animation: blob-drift-4 26s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-nebula-drift-1 {
+    animation: nebula-drift-1 15s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-nebula-drift-2 {
+    animation: nebula-drift-2 18s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .animate-nebula-drift-3 {
+    animation: nebula-drift-3 20s ease-in-out infinite;
+    will-change: transform;
   }
 }
 
